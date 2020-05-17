@@ -6,7 +6,7 @@
 
 ---
 
-### I. Pre-Requistes
+### I. Prerequiste
 
 1. Run XAMPP Control Panel
 2. Start Apache module
