@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2020 at 08:45 AM
+-- Generation Time: May 17, 2020 at 10:37 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -34,13 +34,6 @@ CREATE TABLE `billingdetails` (
   `token` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `billingdetails`
---
-
-INSERT INTO `billingdetails` (`id`, `agreementId`, `nextBillingDate`, `token`, `username`) VALUES
-(6, 'I-C9JW4C4D5N4Y', '2020-06-02T10:00:00Z', 'EC-3F945430WU691074P', 'OwnSUPERNOOB');
 
 -- --------------------------------------------------------
 
@@ -168,7 +161,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstName`, `lastName`, `username`, `email`, `password`, `signUpDate`, `isSubscribed`) VALUES
-(6, 'Eric', 'Wong', 'ewong', 'ewong@test.com', 'f0f14f8057cfd32bef94bf31258924aebe596f9873a74cf73f0cb4fcc1a44ffaced6d3cff16813d184fa34d69ae2086777a31a2464345033004885e1e69f021b', '2020-05-16 04:42:52', 1);
+(6, 'Eric', 'Wong', 'ewong', 'ewong@test.com', 'f0f14f8057cfd32bef94bf31258924aebe596f9873a74cf73f0cb4fcc1a44ffaced6d3cff16813d184fa34d69ae2086777a31a2464345033004885e1e69f021b', '2020-05-16 04:42:52', 1),
+(7, 'Test', 'Test', 'test', 'test@test.com', 'c70b5dd9ebfb6f51d09d4132b7170c9d20750a7852f00680f65658f0310e810056e6763c34c9a00b0e940076f54495c169fc2302cceb312039271c43469507dc', '2020-05-17 03:19:34', 0),
+(8, 'Fabian', 'Doris', 'fdoris', 'fabian.doris@test.com', 'c70b5dd9ebfb6f51d09d4132b7170c9d20750a7852f00680f65658f0310e810056e6763c34c9a00b0e940076f54495c169fc2302cceb312039271c43469507dc', '2020-05-17 04:07:18', 1);
 
 -- --------------------------------------------------------
 
@@ -190,53 +185,14 @@ CREATE TABLE `videoprogress` (
 --
 
 INSERT INTO `videoprogress` (`id`, `username`, `videoId`, `progress`, `finished`, `dateModified`) VALUES
-(1, 'OwnSUPERNOOB', 1145, 0, 1, '2020-04-26 10:23:20'),
-(10, 'OwnSUPERNOOB', 1146, 3, 1, '2020-04-26 10:23:51'),
-(11, 'OwnSUPERNOOB', 1147, 0, 0, '2020-04-25 12:07:51'),
-(12, 'OwnSUPERNOOB', 1148, 6, 1, '2020-04-26 10:52:55'),
-(13, 'OwnSUPERNOOB', 1149, 0, 0, '2020-04-25 12:07:52'),
-(14, 'OwnSUPERNOOB', 1150, 0, 0, '2020-04-25 12:07:53'),
-(15, 'OwnSUPERNOOB', 1151, 0, 0, '2020-04-25 12:07:54'),
-(16, 'OwnSUPERNOOB', 1152, 0, 1, '2020-04-25 12:07:54'),
-(17, 'OwnSUPERNOOB', 1153, 0, 1, '2020-04-25 12:07:55'),
-(18, 'OwnSUPERNOOB', 1154, 0, 1, '2020-04-25 12:12:38'),
-(19, 'OwnSUPERNOOB', 1875, 0, 1, '2020-04-25 13:21:07'),
-(20, 'OwnSUPERNOOB', 1876, 1, 0, '2020-04-25 22:42:24'),
-(21, 'OwnSUPERNOOB', 1092, 3, 0, '2020-04-26 10:22:29'),
-(22, 'OwnSUPERNOOB', 1539, 8, 0, '2020-04-26 10:22:51'),
-(23, 'OwnSUPERNOOB', 1156, 3, 0, '2020-04-26 10:24:20'),
-(24, 'OwnSUPERNOOB', 1155, 7, 0, '2020-04-26 10:39:13'),
-(25, 'OwnSUPERNOOB', 1212, 3, 0, '2020-04-26 10:53:57'),
-(26, 'OwnSUPERNOOB', 354, 3, 0, '2020-04-26 11:01:28'),
-(27, 'OwnSUPERNOOB', 364, 0, 1, '2020-04-26 11:20:01'),
-(28, 'OwnSUPERNOOB', 375, 0, 0, '2020-04-26 11:45:51'),
-(29, 'OwnSUPERNOOB', 1335, 21, 0, '2020-04-27 10:30:27'),
-(30, 'OwnSUPERNOOB', 434, 18, 0, '2020-04-27 10:25:10'),
-(31, 'OwnSUPERNOOB', 1474, 3, 0, '2020-04-27 10:31:18'),
-(32, 'OwnSUPERNOOB', 412, 8, 1, '2020-05-02 13:55:18'),
-(33, 'OwnSUPERNOOB', 247, 3, 0, '2020-04-27 11:37:21'),
-(34, 'OwnSUPERNOOB', 1914, 0, 0, '2020-04-27 11:51:02'),
-(35, 'OwnSUPERNOOB', 462, 0, 0, '2020-04-27 11:51:23'),
-(36, 'OwnSUPERNOOB', 31, 0, 0, '2020-04-28 11:54:42'),
-(37, 'OwnSUPERNOOB', 430, 0, 0, '2020-04-28 12:03:16'),
-(38, 'OwnSUPERNOOB', 1144, 0, 0, '2020-04-28 12:09:54'),
-(39, 'OwnSUPERNOOB', 1196, 0, 0, '2020-04-28 12:10:57'),
-(40, 'OwnSUPERNOOB', 1127, 0, 0, '2020-04-28 12:11:42'),
-(41, 'OwnSUPERNOOB', 1137, 3, 0, '2020-04-28 12:12:00'),
-(42, 'OwnSUPERNOOB', 1574, 0, 0, '2020-04-30 11:50:56'),
-(43, 'OwnSUPERNOOB', 413, 0, 0, '2020-04-30 11:56:46'),
-(44, 'OwnSUPERNOOB', 414, 3, 0, '2020-04-30 11:56:54'),
-(45, 'OwnSUPERNOOB', 415, 0, 0, '2020-04-30 11:56:57'),
-(46, 'OwnSUPERNOOB', 416, 0, 0, '2020-04-30 11:57:01'),
-(47, 'OwnSUPERNOOB', 417, 0, 0, '2020-04-30 11:57:06'),
-(48, 'OwnSUPERNOOB', 418, 0, 0, '2020-04-30 11:57:12'),
-(49, 'OwnSUPERNOOB', 426, 0, 0, '2020-04-30 11:58:18'),
-(50, 'OwnSUPERNOOB', 1651, 0, 1, '2020-05-02 13:59:19'),
-(51, 'OwnSUPERNOOB', 1652, 3, 0, '2020-05-02 13:59:37'),
 (52, 'ewong', 1221, 4, 0, '2020-05-16 04:44:20'),
 (53, 'ewong', 1108, 0, 0, '2020-05-16 04:44:27'),
 (54, 'ewong', 0, 0, 0, '2020-05-16 04:47:59'),
-(55, 'ewong', 1146, 0, 1, '2020-05-16 23:50:58');
+(55, 'ewong', 1146, 0, 1, '2020-05-16 23:50:58'),
+(56, 'ewong', 247, 3, 0, '2020-04-27 11:37:21'),
+(57, 'ewong', 1092, 3, 0, '2020-05-17 04:01:27'),
+(58, 'ewong', 649, 0, 0, '2020-05-17 04:09:25'),
+(59, 'ewong', 412, 0, 0, '2020-05-17 04:34:33');
 
 -- --------------------------------------------------------
 
@@ -626,7 +582,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (409, 'Light in the Mage', 'Luctus facilisis est maximus, lorem finibus mattis massa vel conubia dignissim. Placerat id metus scelerisque, non erat velit mattis ac eleifend nisi ', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2005-09-08', 0, '20:25', 6, 8, 49),
 (410, 'Flames of Dreams', 'Egestas volutpat justo vitae lobortis porttitor gravida nostra odio nam imperdiet aliquet. Consectetur in lacus tincidunt suspendisse nisi dapibus arc', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2013-03-29', 0, '26:12', 6, 9, 49),
 (411, 'The Danger\'s Flight', 'Vestibulum lacinia pharetra neque duis. Tincidunt nec est tellus augue, sapien mattis lacinia scelerisque ultrices ante cras. Placerat etiam justo luc', 'entities/videos/6.mp4', 0, '2019-10-12 22:07:53', '2006-09-17', 0, '35:56', 6, 10, 49),
-(412, 'Seventh Fire', 'Justo tincidunt mollis ante cubilia eget lectus class odio eros dignissim habitant. Lorem dolor elit velit luctus nisi fusce augue nullam. Lorem lacus', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2003-06-19', 35, '49:35', 1, 1, 50),
+(412, 'Seventh Fire', 'Justo tincidunt mollis ante cubilia eget lectus class odio eros dignissim habitant. Lorem dolor elit velit luctus nisi fusce augue nullam. Lorem lacus', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2003-06-19', 36, '49:35', 1, 1, 50),
 (413, 'Burning Something', 'Dolor adipiscing cursus felis ultricies commodo lectus laoreet imperdiet sem. Adipiscing vestibulum lacinia tortor ex gravida sociosqu himenaeos poten', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2007-06-29', 2, '43:29', 1, 2, 50),
 (414, 'Light in the Mage', 'Amet consectetur malesuada nibh lacinia varius orci ornare dapibus quam eu libero diam nisl. Ipsum non maecenas cubilia tristique, malesuada erat maur', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2016-01-25', 7, '44:33', 1, 3, 50),
 (415, 'Obsession in the Spark', 'Mi justo nunc cubilia conubia neque diam, sed metus auctor phasellus aliquam ultricies vulputate maximus class fermentum odio duis tristique. Mattis l', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2016-06-16', 2, '40:49', 1, 4, 50),
@@ -865,7 +821,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (646, 'Seventh Fire', 'Nulla ac ex dictumst nam aliquet. Tincidunt phasellus convallis augue urna gravida lectus taciti. Malesuada luctus ac venenatis hendrerit lectus donec', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2012-04-14', 0, '34:49', 8, 6, 56),
 (647, 'The Dwindling Voyage', 'Placerat ac tortor est et eget hac himenaeos blandit duis ullamcorper. Volutpat a nec phasellus pretium odio. Maecenas facilisis auctor mollis nullam ', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2009-11-08', 0, '46:14', 8, 7, 56),
 (648, 'Birch of Trainer', 'Lorem erat feugiat eleifend phasellus dapibus vel nostra accumsan imperdiet tristique senectus. Lobortis sollicitudin porttitor vel nostra blandit pot', 'entities/videos/2.mp4', 0, '2019-10-12 22:07:53', '2002-01-29', 0, '30:59', 8, 8, 56),
-(649, 'The Dwindling Voyage', 'At tincidunt ac felis eget consequat hac per tristique. Viverra vestibulum porta. At finibus nec tortor per conubia donec bibendum suscipit. Dolor pra', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2005-08-23', 0, '24:59', 1, 1, 57),
+(649, 'The Dwindling Voyage', 'At tincidunt ac felis eget consequat hac per tristique. Viverra vestibulum porta. At finibus nec tortor per conubia donec bibendum suscipit. Dolor pra', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2005-08-23', 1, '24:59', 1, 1, 57),
 (650, 'Silver Twilight', 'Non sapien tellus eget porttitor eu dui sodales laoreet. Velit vestibulum integer quisque faucibus pharetra sollicitudin, praesent dictum erat a est q', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2006-01-03', 0, '22:29', 1, 2, 57),
 (651, 'Birch of Trainer', 'Adipiscing pharetra dapibus consequat platea elementum, egestas sed placerat volutpat pulvinar mollis pretium gravida sociosqu odio rhoncus nam tristi', 'entities/videos/3.mp4', 0, '2019-10-12 22:07:53', '2015-12-21', 0, '31:32', 1, 3, 57),
 (652, 'The Female of the Twins', 'Ex primis sagittis lectus enim. In lacus malesuada a est massa sollicitudin porttitor turpis accumsan congue suscipit fames. Interdum lobortis euismod', 'entities/videos/6.mp4', 0, '2019-10-12 22:07:53', '2010-11-14', 0, '41:56', 1, 4, 57),
@@ -906,7 +862,7 @@ INSERT INTO `videos` (`id`, `title`, `description`, `filePath`, `isMovie`, `uplo
 (909, 'Flames of Dreams', 'Interdum justo ligula posuere gravida commodo laoreet nam. Sed quis orci porttitor enim sem. Tincidunt eleifend sem. Consectetur vestibulum lacinia ul', 'entities/videos/5.mp4', 1, '2019-10-12 22:07:53', '2009-03-07', 0, '30:11', 1, 1, 67),
 (954, 'Voyager in the Lord', 'Mi volutpat feugiat nibh ultrices phasellus purus et proin per neque. Adipiscing metus pretium turpis accumsan neque. Id volutpat nibh a eleifend aliq', 'entities/videos/4.mp4', 1, '2019-10-12 22:07:53', '2015-01-15', 0, '47:13', 1, 1, 68),
 (1020, 'Birch of Trainer', 'Nulla vestibulum aliquam vulputate arcu dui enim suscipit senectus. Finibus massa tempus vivamus, consectetur mi id finibus quisque convallis felis va', 'entities/videos/3.mp4', 1, '2019-10-12 22:07:53', '2009-08-02', 0, '26:33', 1, 1, 69),
-(1092, 'Voyager in the Lord', 'Consectetur praesent malesuada erat luctus lacinia ligula cursus arcu hac gravida neque imperdiet. Maecenas luctus mollis curae sagittis eu torquent d', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2017-01-29', 1, '34:18', 1, 1, 70),
+(1092, 'Voyager in the Lord', 'Consectetur praesent malesuada erat luctus lacinia ligula cursus arcu hac gravida neque imperdiet. Maecenas luctus mollis curae sagittis eu torquent d', 'entities/videos/1.mp4', 0, '2019-10-12 22:07:53', '2017-01-29', 3, '34:18', 1, 1, 70),
 (1093, 'Obsession in the Spark', 'Interdum leo facilisis mollis venenatis ultrices purus euismod tempus himenaeos sodales neque risus morbi. In finibus luctus integer aliquam fusce urn', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2017-11-30', 0, '32:24', 1, 2, 70),
 (1094, 'The Danger\'s Flight', 'Venenatis faucibus arcu imperdiet. Consectetur tortor aliquam convallis orci ultricies ornare eget urna habitasse commodo lectus porta ullamcorper dig', 'entities/videos/4.mp4', 0, '2019-10-12 22:07:53', '2002-11-25', 0, '39:16', 1, 3, 70),
 (1095, 'The Dwindling Voyage', 'Nibh ultrices lectus neque, mattis justo integer facilisis lacinia ultrices phasellus massa primis commodo dui donec. Dolor finibus metus pulvinar auc', 'entities/videos/5.mp4', 0, '2019-10-12 22:07:53', '2007-06-15', 0, '35:37', 1, 4, 70),
@@ -1821,13 +1777,13 @@ ALTER TABLE `entities`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `videoprogress`
 --
 ALTER TABLE `videoprogress`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `videos`
