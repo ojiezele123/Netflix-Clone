@@ -12,7 +12,7 @@ use PayPal\Api\ShippingAddress;
 // Create new agreement
 $agreement = new Agreement();
 $agreement->setName('Subscription to Reeceflix')
-  ->setDescription('£5.59 setup fee and then recurring payments of £9.99 to Monflix')
+  ->setDescription('$5.59 setup fee and then recurring payments of $9.99 to Monflix')
   ->setStartDate(gmdate("Y-m-d\TH:i:s\Z", strtotime("+1 month", time())));
 
 // Set plan id
