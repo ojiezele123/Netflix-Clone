@@ -5,7 +5,7 @@
     date_default_timezone_set("America/New_York");
 
     try{
-        $con = new PDO("mysql:dbname=monflix;host=localhost", "root", "");
+        $con = new PDO("mysql:dbname=netflix;host=localhost", "root", "");
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     }
     catch (PDOException $e) {

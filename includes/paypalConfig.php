@@ -3,8 +3,8 @@
 
     $apiContext = new \PayPal\Rest\ApiContext(
         new \PayPal\Auth\OAuthTokenCredential(
-            'Ab6PNunPkFns-LBCgd_cEL0Fo-w8hAfw16J_RtxGYo7_IfvJ8180PqwJxVtevEmotzWYnA4BkUzbLx0j',     // ClientID
-            'ELmNIg5krQ3GiEexifEhAgASEBgCioVeAbT8xUVsW4ItYaupSEr_v4Xn8bdnUeAx7wg_r1NkjNf6ZrVA'      // ClientSecret
+            'ATJG1cDxX8RLV_xlO-kYH6--_yGGQaQQwzubRqPoJ4X4rCv2JkLLJozJWDdVvy4YamPlKV2L1c_xtbYb',     // ClientID
+            'ECfI4YcUHd1Wl1M1ecymKxVtC8bnjcpgM9SABmYkH8v-fn8nre8CqwRGSPOzHquXkB1XypkDwaeFnMCD'      // ClientSecret
         )
     );
 ?>
