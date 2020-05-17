@@ -14,3 +14,12 @@
 4. Import netflix.sql or submit manual query
 
 ---
+
+### II. Functionality
+
+1. Sign up for an account
+2. Sign in to an existing account
+3. Subscribe to Netflix
+- PayPal API
+
+---
